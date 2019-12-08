@@ -1,5 +1,5 @@
-from HashTable import HashTable
-from Generator import Generator
+from algorithms.HashTable import HashTable
+from algorithms.Generator import Generator
 import argparse
 import os
 import time

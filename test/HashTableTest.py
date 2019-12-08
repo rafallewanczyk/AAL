@@ -1,5 +1,5 @@
 import unittest
-from HashTable import HashTable
+from algorithms.HashTable import HashTable
 
 class MyTestCase(unittest.TestCase):
 

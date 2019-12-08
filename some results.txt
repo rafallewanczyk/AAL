@@ -1,0 +1,44 @@
+rafal@DESKTOP-4IS6O7B MINGW64 ~/PycharmProjects/AAL (master)
+$ python main.py 2003 -s 1000.txt
+wczytalem slownik
+wygenerowa▒em 1000 slow
+maxtime: 0.0010008811950683594, mintime: 0.0, totaltime: 0.07080912590026855, average: 7.080912590026856e-05, fulfillment: 0.49925112331502747, accepted: 1.0
+
+rafal@DESKTOP-4IS6O7B MINGW64 ~/PycharmProjects/AAL (master)
+$ python main.py 10007 -s 5000.txt
+wczytalem slownik
+wygenerowa▒em 5000 slow
+maxtime: 0.0010056495666503906, mintime: 0.0, totaltime: 0.3640294075012207, average: 7.280588150024414e-05, fulfillment: 0.49965024482861997, accepted: 1.0
+
+rafal@DESKTOP-4IS6O7B MINGW64 ~/PycharmProjects/AAL (master)
+$ python main.py 20011 -s 10000.txt
+wczytalem slownik
+wygenerowa▒em 10000 slow
+maxtime: 0.004985809326171875, mintime: 0.0, totaltime: 0.900590181350708, average: 9.00590181350708e-05, fulfillment: 0.49972515116685823, accepted: 1.0
+
+rafal@DESKTOP-4IS6O7B MINGW64 ~/PycharmProjects/AAL (master)
+$ python main.py 100003 -s 50000.txt
+wczytalem slownik
+wygenerowa▒em 50000 slow
+maxtime: 0.001995563507080078, mintime: 0.0, totaltime: 4.969712257385254, average: 9.939424514770508e-05, fulfillment: 0.4999850004499865, accepted: 1.0
+
+rafal@DESKTOP-4IS6O7B MINGW64 ~/PycharmProjects/AAL (master)
+$ python main.py 200003 -s 100000.txt
+wczytalem slownik
+wygenerowa▒em 100000 slow
+maxtime: 0.014960050582885742, mintime: 0.0, totaltime: 9.983303308486938, average: 9.983303308486939e-05, fulfillment: 0.4999925001124983, accepted: 1.0
+
+rafal@DESKTOP-4IS6O7B MINGW64 ~/PycharmProjects/AAL (master)
+$ python main.py 1000003 -s 500000.txt
+wczytalem slownik
+wygenerowa▒em 500000 slow
+maxtime: 0.03390860557556152, mintime: 0.0, totaltime: 52.576526403427124, average: 0.00010515305280685425, fulfillment: 0.49999850000449997, accepted: 1.0
+
+rafal@DESKTOP-4IS6O7B MINGW64 ~/PycharmProjects/AAL (master)
+$ python main.py 2000003 -s 1000000.txt
+wczytalem slownik
+wygenerowa▒em 1000000 slow
+maxtime: 0.0480341911315918, mintime: 0.0, totaltime: 110.85050630569458, average: 0.00011085050630569458, fulfillment: 0.499999250001125, accepted: 1.0
+
+rafal@DESKTOP-4IS6O7B MINGW64 ~/PycharmProjects/AAL (master)
+$
