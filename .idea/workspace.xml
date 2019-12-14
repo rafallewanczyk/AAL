@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8bae054-d460-4f8a-a3bc-ff076da652a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/add_test05.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add_test05.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add_test1.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add_test1.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enum_test05.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enum_test05.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enum_test1.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enum_test1.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

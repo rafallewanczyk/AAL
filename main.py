@@ -16,6 +16,7 @@ def main():
 
     parser.add_argument("-s", "--statistic", type=str,
                         help="Program używa generatora oraz prowadzi statystyke")
+    parser.add_argument("-e", "--enumeration", type=str, help="Program przeprowadza analize dla enumeracji tablicy")
     args = parser.parse_args()
 
     hashtable = HashTable(args.size)
@@ -72,6 +73,30 @@ def main():
             maxtime = max(maxtime, end-start)
 
         print(f"maxtime: {maxtime}, mintime: {mintime}, totaltime: {totaltime}, average: {totaltime/len(all)}, fulfillment: {hashtable.getSize()/hashtable.K}, accepted: {hashtable.getSize()/len(all)}")
+
+    if args.enumeration:
+        if "http" in args.enumeration:
+            os.system(f"wget -O index.html {args.enumeration}")
+            adress = "index.html"
+        else :
+            adress = args.enumeration
+
+        totaltime = 0
+        mintime = float("inf")
+        maxtime  = 0
+
+        all = Generator(adress).generate()
+        for word in all:
+            hashtable.insert(word)
+
+        for word in all:
+            start = time.time()
+            hashtable.find(word)
+            end = time.time()
+            maxtime=max(end-start, maxtime)
+            mintime=min(end-start, mintime)
+            totaltime+=end-start
+        print(f"{adress} : maxtime: {maxtime}, mintime: {mintime}, totaltime: {totaltime}, average: {totaltime / len(all)}, fulfillment: {hashtable.getSize() / hashtable.K}, accepted: {hashtable.getSize() / len(all)}")
 
 if __name__ == "__main__":
     main()
