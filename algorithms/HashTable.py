@@ -4,6 +4,7 @@ class HashTable:
         self.K = size
         self.array = ["1"] * size
         self.reserved = 0
+        self.iteraotr = 0 
 
     def insert(self, value):
         index = self.getHashValue(value)
@@ -83,5 +84,18 @@ class HashTable:
             value %= self.K
 
         return value
+	
+    def begin(self):
+        for i in range(0, self.K): 
+            if self.array[i] != "1" and self.array[i] != "2": 
+                self.iterator = i 
+                break 
+                
+    def getNext(self):
+        for i in range(self.iterator +1, self.iterator+self.K):
+            if self.array[i % self.K] != "1" and self.array[i % self.K] != "2": 
+                ret = self.array[self.iterator % self.K]
+                self.iterator = i  
+                return ret
 
 

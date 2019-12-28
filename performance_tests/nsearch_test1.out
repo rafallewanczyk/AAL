@@ -1,0 +1,7 @@
+../data/1000.txt : maxtime: 0.0009996891021728516, mintime: 0.0, totaltime: 0.04896974563598633, average: 4.9018764400386715e-05, fulfillment: 0.9900891972249752, accepted: 1.0
+../data/5000.txt : maxtime: 0.0019989013671875, mintime: 0.0, totaltime: 0.2778282165527344, average: 5.557675866227933e-05, fulfillment: 0.9992004797121727, accepted: 1.0
+../data/10000.txt : maxtime: 0.00299835205078125, mintime: 0.0, totaltime: 0.5186972618103027, average: 5.187491367239751e-05, fulfillment: 0.9992005596082743, accepted: 1.0
+../data/50000.txt : maxtime: 0.006002187728881836, mintime: 0.0, totaltime: 2.952242851257324, average: 5.905194325833749e-05, fulfillment: 0.999460226704784, accepted: 1.0
+../data/100000.txt : maxtime: 0.01798868179321289, mintime: 0.0, totaltime: 6.0292956829071045, average: 6.029838368360257e-05, fulfillment: 0.999880003599892, accepted: 1.0
+../data/500000.txt : maxtime: 0.060958147048950195, mintime: 0.0, totaltime: 30.839974403381348, average: 6.16831563308919e-05, fulfillment: 0.9999300012599773, accepted: 1.0
+../data/1000000.txt : maxtime: 0.06396055221557617, mintime: 0.0, totaltime: 61.312228202819824, average: 6.131461947297928e-05, fulfillment: 0.9999580001259997, accepted: 1.0

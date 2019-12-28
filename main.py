@@ -17,7 +17,10 @@ def main():
     parser.add_argument("-s", "--statistic", type=str,
                         help="Program używa generatora oraz prowadzi statystyke")
     parser.add_argument("-e", "--enumeration", type=str, help="Program przeprowadza analize dla enumeracji tablicy")
+    parser.add_argument("-n", "--nsearch", type=str, help="Program przeprowadza analize dla n wyszukan w tablicy")
+
     args = parser.parse_args()
+
 
     hashtable = HashTable(args.size)
     if args.input:
@@ -72,14 +75,14 @@ def main():
             mintime = min(mintime, end-start)
             maxtime = max(maxtime, end-start)
 
-        print(f"maxtime: {maxtime}, mintime: {mintime}, totaltime: {totaltime}, average: {totaltime/len(all)}, fulfillment: {hashtable.getSize()/hashtable.K}, accepted: {hashtable.getSize()/len(all)}")
+        print(f"{adress} maxtime: {maxtime}, mintime: {mintime}, totaltime: {totaltime}, average: {totaltime/len(all)}, fulfillment: {hashtable.getSize()/hashtable.K}, accepted: {hashtable.getSize()/len(all)}")
 
-    if args.enumeration:
-        if "http" in args.enumeration:
-            os.system(f"wget -O index.html {args.enumeration}")
+    if args.nsearch:
+        if "http" in args.nsearch:
+            os.system(f"wget -O index.html {args.nsearch}")
             adress = "index.html"
         else :
-            adress = args.enumeration
+            adress = args.nsearch
 
         totaltime = 0
         mintime = float("inf")
@@ -98,5 +101,32 @@ def main():
             totaltime+=end-start
         print(f"{adress} : maxtime: {maxtime}, mintime: {mintime}, totaltime: {totaltime}, average: {totaltime / len(all)}, fulfillment: {hashtable.getSize() / hashtable.K}, accepted: {hashtable.getSize() / len(all)}")
 
+    if args.enumeration:
+        if "http" in args.enumeration:
+            os.system(f"wget -O index.html {args.enumeration}")
+            adress = "index.html"
+        else :
+            adress = args.enumeration
+
+        totaltime = 0
+        mintime = float("inf")
+        maxtime  = 0
+
+        all = Generator(adress).generate()
+        for word in all:
+            hashtable.insert(word)
+
+        hashtable.begin()
+        for i in range (0, hashtable.getSize()): 
+            start = time.time()
+            hashtable.getNext()
+            end = time.time()
+            maxtime=max(end-start, maxtime)
+            mintime=min(end-start, mintime)
+            totaltime+=end-start
+        print(f"{adress} : maxtime: {maxtime}, mintime: {mintime}, totaltime: {totaltime}, average: {totaltime / len(all)}, fulfillment: {hashtable.getSize() / hashtable.K}, accepted: {hashtable.getSize() / len(all)}")
+            
+           
+		
 if __name__ == "__main__":
     main()
