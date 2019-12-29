@@ -13,3 +13,8 @@ python ../main.py 500009 -n ../data/500000.txt >> nsearch_test1.out
 echo "zakonczylem n przeszukan 500000"
 python ../main.py 1000003 -n ../data/1000000.txt >> nsearch_test1.out
 echo "zakonczylem n przeszukan dla 1000000"
+python ../main.py 2000003 -n ../data/2000000.txt >> nsearch_test1.out
+echo "skonczylem n przeszukan 2000000"
+python ../main.py 3000017 -n ../data/3000000.txt >> nsearch_test1.out
+echo "skonczylem n przeszukan 3000000"
+
